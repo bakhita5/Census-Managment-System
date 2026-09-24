@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Commissioner form</title>
+    <script src="formvalidation.js"></script>
+</head>
+<body>
+    <form action="commissioner.php" method="POST"><!--when the form is submitted the data is sent to comissioner.php using method post-->
+        <h1><u>COMMISSIONER FORM</u></h1>
+
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id=fname onmouseout="validatefname();"><br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" onmouseout="validatelname();"><br><br>
+
+        <label for="phone_number">Phone number:</label>
+        <input type="text" name="phone_number" id="phone_number" onmouseout="validatephone_number();"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" onmouseout="validateemail();"><br><br>
+
+        <label for="national_id">National ID:</label>
+        <input type="text" name="national_id" id="national_id" onmouseout="validatenational_id();"><br><br>
+
+        <label for="county_id">County ID:</label>
+        <input type="text" name="county_id" id="county_id" onmouseout="validatecounty_id();"><br><br>
+
+        <label for="user_id">User ID:</label>
+        <input type="text" name="user_id" id="user_id" onmouseout="validateuser_id();"><br><br>
+
+        <input type="submit" name="submit" id="submit" value="submit">
+        <input type="button" id="back" value="Back" onclick="history.back();">
+    </form>
+</body>
+</html>

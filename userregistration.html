@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="forms.css">
+    <title>User registration form</title>
+    <script src="formvalidation.js"></script>
+</head>
+<body>
+
+    <form action="userregistration.php" method="POST">
+    <h1><u>USER REGISTRATION FORM</u></h1>
+    <label for="name" > Name:</label>
+    <input type="text" name="name" id="name" onmouseout='validatename();'> 
+    <br><br>
+
+    <label for="Email"> Email:</label>
+    <input type="text" name="email" id="email"  onmouseout='validateemail();'>
+    <br><br>
+
+
+    <label for="Role">Role:</label>
+    <select name="role" id="role" onmouseout='validaterole();'>
+        <option value=""></option>
+        <option value="Commissioner">Commissioner</option>
+        <option value="Deputy commissioner">Deputy commissioner</option>
+        <option value="Supervisor">Supervisor</option>
+        <option value="Census officer">Census officer </option>
+    </select><br><br>
+
+    <label for="Username"> Username:</label>
+     <input type="text" name="username" id="username" onmouseout="validateusername();">
+    <br><br>
+
+    <label for="Password">Password:</label>
+     <input type="text" name="password" id="password" onmouseout="validatepassword();">
+    </label><br><br>
+
+    
+        <input type="submit" name="submit" id="submit" value="submit">
+        <input type="button" id="back" value="Back" onclick="history.back();">
+    </form>
+</body>
+</html>

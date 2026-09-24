@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Household Information</title>
+        <link rel="stylesheet" href="forms.css">
+    <script src="formvalidation.js"></script>
+</head>
+<body>
+    <form action="household.php" method="POST">
+        <h1><u>CENSUS DATA</u></h1>
+         <h2><u>Household Information</u></h2>
+        <label for="censusofficer_id"> Census officer ID:</label>
+        <input type="text" name="censusofficer_id" id="censusofficer_id" onmouseout="validatecensusofficer_id();"><br><br>
+
+        <label for="family_size">Family size:</label>
+        <input type="text" name="family_size" id="family_size" onmouseout="validatefamily_size();"><br><br>
+
+
+        <label for="access_to_electricity">Access to Electricity:</label>
+        <input type="radio" name="access_to_electricity" id="YES" value="YES" onmouseout="validateaccess_to_electricity();">Yes 
+        <input type="radio" name="access_to_electricity" id="NO" value="NO" onmouseout="validateaccess_to_electricity">No <br><br>
+
+        <label for="access_to_water">Access to Water:</label>
+        <input type="radio" name="access_to_water" id="YES" value=" YES" onmouseout="validateaccess_to_water();">Yes
+        <input type="radio" name="access_to_water" id="NO" value="NO" onmouseout="validateaccess_to_water();">No <br><br>
+
+        <label for="assets">Assets:</label>
+        <input type="text" name="assets" id="assets" onmouseout="validateassets();"><br><br>
+
+        <label for="residential_status">Residential status:</label>
+        <select name="residential_status" id="residential_status" onmouseout="validateresidential_status();">
+        <option value="selected"></option>
+        <option value="Owner">Owner</option>
+        <option value="Tenant">Tenant</option>
+        <option value="Living with Family">Living with Family</option>
+        <option value="Living with Friends">Living with Friends</option>
+        <option value="Employer Provided">Employer Provided Housing</option>
+        <option value="Government Housing">Government Housing</option>
+        <option value="Temporary Shelter">Temporary Shelter</option>
+        <option value="Homeless">Homeless</option>
+        </select><br><br>
+
+         <input type="submit" name="submit" id="submit" value="submit">
+        <input type="button" id="back" value="Back" onclick="history.back();">
+</form>
+
+   
+</body>
+</html>

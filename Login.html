@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="login.css">
+<body>
+    
+<script src="forms.js"></script>
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<form action="login.php" method="POST">
+    <title>Login page</title>
+    <h1><u>LOGIN PAGE</u></h1>
+
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username"  onmouseout="validateusername();"><br><br>
+
+    <label for="Password">password:</label>
+    <input type="password" name="password" id="password"   onmouseout="validatepassword();">
+ 
+      
+
+    <div class="button-group">
+    <input type="submit" name="login" value="Login"><br>
+    <input type="button" id="back" value="Back" onclick="history.back();">
+    </div>
+    
+    <p>or<br></p>
+    
+    <a href="userregistration.html">Create an account</a></p>
+</form>
+
+</body>
+</html>

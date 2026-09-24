@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="forms.css">
+    <title>person form</title>
+    <script src="formvalidation.js"></script>
+</head>
+<body>
+      <form action="person.php" method="POST">
+        <h2><u>Person Data</u></h2>
+
+        <label for="household_id">Household id:</label>
+        <input type="text" name="household_id" id="household_id" onmouseout="validatehousehold_id();"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age" onmouseout="validateage();"><br><br>
+
+        <label for="gender"> Gender:</label>
+        <select name="gender" id="gender" onmouseout="validategender();">
+        <option value="" selected="selected"></option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        </select><br><br>
+
+        <label for="marital_status">Marital Status:</label>
+        <select name="marital_status" id="marital_status" onmouseout="validatemarital_status();">
+            <option value="selected"></option>
+            <option value="single">single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="sepatared">Separeted</option>
+             <option value="widowed">Widowed</option>
+        </select><br><br>
+
+        <label for="education "> Level of Education:</label>
+        <select name="education" id="education" onmouseout="validateeducation();">
+            <option value="selected"></option>
+            <option value="Not educated">Not educated</option>
+            <option value="Primary">Primary</option>
+            <option value="Secondary">Secondary</option>
+            <option value="Certificate">Certificate</option>
+            <option value="Diploma">Diploma</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="Master">Postgraduate</option>
+          <option value="PhD">Doctrate</option>
+</select><br><br>
+
+        <label for="religion"> Religion:</label>
+           <select name="religion" id="religion" onmouseout="validatereligion();">
+            <option value="selected"></option>
+            <option value="christian">Christian</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Atheist">Atheist</option>
+             <option value="other">Other</option>
+      </select><br><br>
+    
+      <label for="occupation">Occupation:</label>
+      <input type="text" name="occupation" id="occupation" onmouseout="validateoccupation();"><br><br>
+
+      <label for="employment_status">Employment status:</label>
+        <select name="employment_status" id="employment_status"  onmouseout="validateemployment_status();">
+            <option value="selected"></option>
+            <option value="employed">Employed</option>
+            <option value="not employed">Not employed</option>
+            <option value="Self employed">Self employed</option>
+             <option value="Student">Student</option>
+            <option value="Retired">Retired</option>
+        </select><br><br>
+
+        <label for="tribe">Tribe:</label>
+        <input type="text" name="tribe" id="tribe" onmouseout="validatetribe();"><br><br>
+
+         <input type="submit" name="submit" value="submit">
+         <input type="button" id="back" value="Back" onclick="history.back();"><br><br>
+        
+       
+    </form>
+</body>
+</html>
